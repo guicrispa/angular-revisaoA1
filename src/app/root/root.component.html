@@ -1,0 +1,10 @@
+<app-header></app-header>
+<input type="radio" [(ngModel)]="option" [value]="1" />1
+<input type="radio" [(ngModel)]="option" [value]="2" />2
+
+<h2>Opção: {{ option }}</h2>
+
+<div *ngIf="option == '1'"><app-juros-simples></app-juros-simples></div>
+<div *ngIf="option == '2'"><app-juros-compostos></app-juros-compostos></div>
+
+<app-footer></app-footer>

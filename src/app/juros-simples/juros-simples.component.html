@@ -1,0 +1,27 @@
+<div class="teste">
+  <h2>Juros Simples</h2>
+
+  <input
+    type="number"
+    placeholder="Informe seu capital inicial:"
+    style="padding: 10px;"
+    [(ngModel)]="capital"
+  />
+  <br />
+  <input
+    type="number"
+    placeholder="Informe a taxa de juros:"
+    style="padding: 10px;"
+    [(ngModel)]="juros"
+  />
+  <br />
+  <input
+    type="number"
+    placeholder="Informe o tempo de aplicação em Meses:"
+    style="padding: 10px;"
+    [(ngModel)]="tempoAplicacao"
+  />
+  <br />
+
+  <button (click)="jurosSimples()">Enviar</button>
+</div>
